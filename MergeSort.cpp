@@ -8,11 +8,10 @@ class MergeSort
    private:
      float *data;
      int datalength;
-     //void mergesubsort(float *subtempdata, int p, int mid, int q);
+     void mergesubsort(float *subtempdata, int p, int mid, int q);
    public:
      MergeSort(float *tempdata, int length);
      void sortdata(float *data, int p, int q);
-     void mergesubsort(float *subtempdata, int p, int mid, int q);
      void showsort();
 };
 MergeSort::MergeSort(float *tempdata, int length)
