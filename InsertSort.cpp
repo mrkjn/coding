@@ -39,7 +39,7 @@ void Insertsort::showsort()
 }
 int main(int argc, char *argv[])
 {
-  float a[10] = {1, 4, 2, 5, 7, 10, 21, 3, 15, 15};
+  float a[10] = {1.0, 4.0, 2.0, 5.0, 7.0, 10.0, 21.0, 3.0, 15.0, 15.0};
   Insertsort mysort = Insertsort(a, sizeof(a)/sizeof(float));
   mysort.sortdata();
   mysort.showsort();
