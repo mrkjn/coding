@@ -8,17 +8,17 @@ class HeapSort
    private:
     datatype *data;
     int datalength;
-   public:
-    HeapSort(datatype *tempdata, int templength);
-    void max_heap(datatype *data, int i);
+	void max_heap(datatype *data, int i);
     void build_max_heap();
-    void heap_sort();
-    void swap_data(datatype *a, datatype *b)
+	void swap_data(datatype *a, datatype *b)
     {
         float temp_swap = *a;
         *a = *b;
         *b = temp_swap;
     }
+   public:
+    HeapSort(datatype *tempdata, int templength);
+    void heap_sort();
 };
 HeapSort::HeapSort(datatype *tempdata, int templength)
 {
@@ -63,7 +63,6 @@ void HeapSort::heap_sort()
         datalength--;
         max_heap(data, 1);
     }
-
 }
 int main(int args, char *argv[])
 {
