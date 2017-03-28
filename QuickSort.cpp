@@ -38,8 +38,8 @@ unsigned int QuickSort::getsort_length()
 }
 unsigned int QuickSort::find_midnum(unsigned int start_index, unsigned int end_index)
 {
-    decltype(data.size()) j = -1;
-    decltype(data.size()) i = 0;
+    decltype(data.size()) j = start_index-1;
+    decltype(data.size()) i = j+1;
     if(end_index > start_index)
     {
       datatype key = data[end_index];
